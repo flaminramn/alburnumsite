@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shipping Policy | Alburnum</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main>
+    <h1>Shipping Policy</h1>
+
+    <h2>Overview</h2>
+    <p>
+      Alburnum creates handcrafted items made from wood, metal, and paper.
+      Because our products vary in size, shape, and materials, shipping costs
+      are not always predictable at checkout.
+    </p>
+
+    <h2>How shipping is handled</h2>
+    <ul>
+      <li>Shipping is not automatically calculated for all items</li>
+      <li>Shipping is calculated after the order is placed</li>
+      <li>You will receive a shipping quote before the item ships</li>
+    </ul>
+
+    <p>No order ships without shipping approval.</p>
+
+    <h2>Why shipping varies</h2>
+    <ul>
+      <li>Some items are lightweight but oversized</li>
+      <li>Some items require custom packaging</li>
+      <li>Larger items ship more accurately by weight</li>
+    </ul>
+
+    <h2>After you place an order</h2>
+    <ol>
+      <li>You place the order</li>
+      <li>We review size, weight, and destination</li>
+      <li>We calculate actual shipping cost</li>
+      <li>We contact you with the shipping total</li>
+      <li>You approve the shipping charge</li>
+      <li>Your order ships</li>
+    </ol>
+
+    <h2>Request a shipping quote before ordering</h2>
+    <p>
+      If you want a shipping estimate before purchasing, contact us and include
+      the product name and your ZIP code.
+    </p>
+
+    <h2>Local pickup</h2>
+    <p>
+      Local pickup may be available depending on the item.
+      This will be discussed during order confirmation.
+    </p>
+
+    <h2>International shipping</h2>
+    <ul>
+      <li>Handled case by case</li>
+      <li>Duties and taxes are the buyer’s responsibility</li>
+      <li>Contact us before ordering for a quote</li>
+    </ul>
+
+    <h2>Shipping carriers</h2>
+    <ul>
+      <li>USPS</li>
+      <li>UPS</li>
+      <li>FedEx</li>
+    </ul>
+
+    <h2>Questions</h2>
+    <p>
+      If you have questions about shipping, please use the Contact page.
+    </p>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="scripts/layout.js"></script>
+  <script>
+    fetch("header.html")
+      .then(r => r.text())
+      .then(h => document.getElementById("header").innerHTML = h);
+
+    fetch("footer.html")
+      .then(r => r.text())
+      .then(f => document.getElementById("footer").innerHTML = f);
+  </script>
+
+</body>
+</html>

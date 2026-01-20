@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alburnum</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="header"></div>
+
+<main><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Alburnum</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main>
+    <h1>Contact</h1>
+
+    <p>
+      Questions about products, custom orders, or display signs.  
+      Use the form below or email us directly.
+    </p>
+
+    <form action="mailto:info@alburnum.com" method="post" enctype="text/plain">
+      <label>
+        Name<br>
+        <input type="text" name="name" required>
+      </label>
+
+      <br><br>
+
+      <label>
+        Email<br>
+        <input type="email" name="email" required>
+      </label>
+
+      <br><br>
+
+      <label>
+        Product or Project Type<br>
+        <select name="interest">
+          <option>General Question</option>
+          <option>Wood Product</option>
+          <option>Metal Product</option>
+          <option>Paper Product</option>
+          <option>Display Sign</option>
+          <option>Custom Order</option>
+        </select>
+      </label>
+
+      <br><br>
+
+      <label>
+        Message<br>
+        <textarea name="message" rows="5" required></textarea>
+      </label>
+
+      <br><br>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <p>
+      Or email us directly at  
+      <a href="mailto:info@alburnum.com">info@alburnum.com</a>
+    </p>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="scripts/layout.js"></script>
+
+</body>
+</html>
+</main>
+
+<div id="footer"></div>
+
+<script>
+fetch("header.html")
+  .then(r => r.text())
+  .then(h => document.getElementById("header").innerHTML = h);
+
+fetch("footer.html")
+  .then(r => r.text())
+  .then(f => document.getElementById("footer").innerHTML = f);
+</script>
+</body>
+</html>

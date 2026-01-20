@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main>
+    <h1>Checkout</h1>
+
+    <div id="checkout-cart"></div>
+
+    <h2>Total: $<span id="checkoutTotal">0.00</span></h2>
+
+    <div id="paypal-button-container"></div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="scripts/layout.js"></script>
+  <script src="scripts/cart.js"></script>
+
+  !-- PayPal SDK -->
+  <script src="https://www.paypal.com/sdk/js?client-id=AcRGlUFUq5X2vglvx8vo67e-NdzQ1QhNsopXicbQD_n6OxnuKBgIP9WBPUVtLPTktsOk_bWGAWvy7YMa&currency=USD&enable-funding=venmo"></script>
+  <script src="scripts/paypal.js"></script>
+<!-- Injection script goes at the bottom -->
+  <script>
+    fetch("header.html")
+      .then(r => r.text())
+      .then(h => document.getElementById("header").innerHTML = h);
+
+    fetch("footer.html")
+      .then(r => r.text())
+      .then(f => document.getElementById("footer").innerHTML = f);
+  </script>
+</body>
+</html>

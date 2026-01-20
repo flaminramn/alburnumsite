@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Return Policy | Alburnum</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main>
+    <h1>Return Policy</h1>
+
+    <h2>Standard items</h2>
+    <p>
+      We accept returns on non-custom items if the product is returned in
+      original condition.
+    </p>
+
+    <ul>
+      <li>Item must be unused</li>
+      <li>Item must be in original condition</li>
+      <li>Item must be returned in original packaging when possible</li>
+    </ul>
+
+    <h2>Custom work</h2>
+    <p>
+      Custom items are made to order and are not eligible for return.
+    </p>
+
+    <p>
+      This includes items made to custom size, material, finish, design,
+      or personalization.
+    </p>
+
+    <h2>Return process</h2>
+    <ol>
+      <li>Contact us before returning any item</li>
+      <li>Include your order details</li>
+      <li>We will provide return instructions</li>
+    </ol>
+
+    <h2>Return shipping</h2>
+    <ul>
+      <li>Buyer is responsible for return shipping</li>
+      <li>Original shipping costs are non-refundable</li>
+    </ul>
+
+    <h2>Refunds</h2>
+    <p>
+      Refunds are issued after the returned item is received and inspected.
+    </p>
+
+    <h2>Questions</h2>
+    <p>
+      If you are unsure whether an item qualifies for return, please contact us
+      before purchasing.
+    </p>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="scripts/layout.js"></script>
+    <script>
+        fetch("header.html")
+        .then(r => r.text())
+        .then(h => document.getElementById("header").innerHTML = h);
+    
+        fetch("footer.html")
+        .then(r => r.text())
+        .then(f => document.getElementById("footer").innerHTML = f);
+    </script>
+
+</body>
+</html>    

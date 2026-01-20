@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alburnum | Handcrafted Wood, Metal, and Paper Goods</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div id="header"></div>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero hero-image">
+  <div class="hero-content">
+    <h1>Handcrafted Wood, Metal, and Paper Goods</h1>
+    <p>Functional pieces and display signs built in small batches and made to last.</p>
+    <a href="products.html" class="btn-primary">View Products</a>
+  </div>
+</section>
+
+
+
+    <!-- What We Make -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Wood</h2>
+        <p>Laser cut and engraved pieces made from solid hardwoods.</p>
+      <div class="hero-images">
+    <img src="https://dl.dropbox.com/scl/fi/cf2etoxkt5yj8lrqbt1g3/IMG_0364.JPG?rlkey=71x4m10h2eaeol1ezp2fhxqpe&st=6xhok2dm&dl=0">
+    <img src="https://dl.dropbox.com/scl/fi/l7l9f3stpv49coudpuvn0/2024-12-10-13.42.57.jpg?rlkey=17gn7f94kc5qy36koiuxn8bm6&st=13p4ezpk&dl=0" alt="">
+    <img src="https://dl.dropbox.com/scl/fi/maubzv7f3yn3z9pn4e5r4/2024-11-21-00.23.15.jpg?rlkey=g4ybqr8wb5e5zqb2v5l61x9ej&st=1ruyymti&dl=0" alt="">
+  </div>
+  </div>
+
+  <section class="hero">
+    <div class="hero-content">
+        <h2>Metal</h2>
+    <p>Steel and aluminum signs finished for indoor and outdoor display.</p>
+        <div class="hero-images">
+    <img src="https://dl.dropbox.com/scl/fi/kurg9f43ujeuuip36sbz6/IMG_0379.JPG?rlkey=rja0dm8u9zrie3p8le8tkfip5&st=x4r6ujys&dl=0" alt="">
+    <img src="https://dl.dropbox.com/scl/fi/lab6ecjvcjgarq54lwj2o/IMG_0353.JPG?rlkey=v4ykp7c8lki36rhe50e47rqks&st=8mrhpjs3&dl=0" alt="">
+    <img src="https://dl.dropbox.com/scl/fi/xy5mq4a8kigye8ngex83w/1.jpg?rlkey=7b86p695k3ygpry3hwyngrei2&st=l3z8jguw&dl=0" alt="">
+        </div>
+  </div>
+  </section>
+
+  <section class="hero">
+    <div class="hero-content">
+        <h2>Paper</h2>
+    <p>Precision cut paper designs for framing and presentation.</p>
+        <div class="hero-images">
+    <img src="https://dl.dropbox.com/scl/fi/2ncbm0lnnxeatm9xbzfrs/IMG_2413.JPG?rlkey=bnkch4h022wx24k4fyewe3fw6&st=qbmej4rl&dl=0" alt="">
+    <img src="https://dl.dropbox.com/scl/fi/ruscql8t2h0bbaeac4p3w/Carrot-Handmade-Paper.jpg?rlkey=v98l9abm7td8jidp4d2u4h2id&st=tfbnse7j&dl=0" alt="">
+    <img src="https://dl.dropbox.com/scl/fi/3819qcb464p3eeip3x42b/2025-03-19-19.47.58.jpg?rlkey=xkmi8crq69x77bh2dk5njxvuh&st=d6o797ip&dl=0" alt="">
+        </div>
+  </div>
+  </section>
+
+
+   <section class="past-work-preview">
+  <img id="pastWorkImage" src="" alt="Past work preview">
+
+  <div class="past-work-text">
+    <h2>Featured Work</h2>
+    <p>Custom display signs, branded shop pieces, and one-off designs built to order.</p>
+    <a href="gallery.html" class="link">View Gallery</a>
+  </div>
+</section>
+
+
+    <!-- Custom Work -->
+    <section class="custom">
+      <h2>Custom Projects</h2>
+      <p>Need a specific size, material, or finish. We design and build custom pieces on request.</p>
+      <a href="contact.html" class="btn-secondary">Contact Us</a>
+    </section>
+
+  </main>
+
+  <div id="footer"></div>
+  <script src="scripts/past-work-preview.js"></script>
+  <script src="scripts/layout.js"></script>
+  <script src="scripts/featured.js"></script>
+<script>
+    fetch("header.html")
+      .then(r => r.text())
+      .then(h => document.getElementById("header").innerHTML = h);
+
+    fetch("footer.html")
+      .then(r => r.text())
+      .then(f => document.getElementById("footer").innerHTML = f);
+  </script>
+
+</body>
+</html>
